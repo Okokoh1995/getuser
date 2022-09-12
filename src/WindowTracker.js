@@ -5,10 +5,10 @@ export default function WindowTracker() {
 
     useEffect(() => {
         window.addEventListener("resize", function() {
-            console.log("Resized")
+            setWindowWidth(window.innerWidth)
         })
     }, [])
     return (
-        <h1>window width: {window.innerWidth}</h1>
+        <h1>window width: {windowWidth}</h1>
     )
 }
